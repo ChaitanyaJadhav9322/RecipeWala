@@ -5,7 +5,7 @@ import "../Styles/Recipecard.css";
 const RecipeCard = ({ recipe }) => {
   return (
     <div className="recipe-card">
-      <img src={`http://localhost:5000${recipe.image}`} alt={recipe.title} />
+      <img src={`https://backend-aivq.onrender.com${recipe.image}`} alt={recipe.title} />
       <h3>{recipe.title}</h3>
       <Link to={`/recipe/${recipe._id}`} className="details-btn">See Details</Link>
     </div>
